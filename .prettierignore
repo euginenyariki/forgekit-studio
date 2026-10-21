@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+dist/
+build/
+out/
+.next/
+coverage/
+test-results/
+pnpm-lock.yaml
+*.tsbuildinfo
+packages/templates/templates/**/content/src/generated/
+apps/studio/next-env.d.ts

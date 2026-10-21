@@ -1,0 +1,16 @@
+{
+  "id": "react-vite",
+  "templateVersion": "1.0.0",
+  "name": "React + Vite",
+  "summary": "React 19 single-page app with Vite 8 and TypeScript.",
+  "description": "A focused React starter: Vite dev server, strict TypeScript, a typed task store with local persistence, and a small component set you can grow. No framework lock-in, no backend, no database.",
+  "category": "frontend",
+  "tags": ["react", "vite", "typescript", "spa", "frontend"],
+  "technologies": ["React 19", "Vite 8", "TypeScript 5"],
+  "setupRequirements": ["Node.js 20.19 or newer", "npm, pnpm or yarn"],
+  "commands": {
+    "dev": "{{packageManager}} run dev",
+    "build": "{{packageManager}} run build",
+    "typecheck": "{{packageManager}} run typecheck"
+  }
+}

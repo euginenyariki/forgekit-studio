@@ -1,0 +1,25 @@
+{
+  "name": "@forgekit-tests/integration",
+  "version": "0.1.0",
+  "private": true,
+  "description": "End-to-end tests that generate every ForgeKit template and (optionally) install it.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:install": "vitest run --mode install",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@forgekit/core": "workspace:*",
+    "@forgekit/templates": "workspace:*",
+    "fflate": "^0.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}

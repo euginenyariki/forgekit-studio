@@ -1,0 +1,15 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'tests/*'
+
+onlyBuiltDependencies:
+  - esbuild
+  - '@tailwindcss/oxide'
+  - sharp
+  - unrs-resolver
+minimumReleaseAgeExclude:
+  - '@next/eslint-plugin-next@16.4.2'
+  - '@vitest/mocker@5.0.5'
+  - '@vitest/spy@5.0.5'
+  - vitest@5.0.5

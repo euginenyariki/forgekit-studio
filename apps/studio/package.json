@@ -1,0 +1,40 @@
+{
+  "name": "forgekit-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web studio for browsing ForgeKit templates and generating projects in the browser.",
+  "license": "MIT",
+  "author": "Eugine Nyariki <euginenyariki100@gmail.com>",
+  "homepage": "https://github.com/euginenyariki/forgekit-studio",
+  "funding": [
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/euginestark"
+    },
+    {
+      "type": "buymeasoda",
+      "url": "https://buymesoda.com/W2nsVZsQNQXjfqwZH6FepWewxOI2"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@forgekit/core": "workspace:*",
+    "@forgekit/templates": "workspace:*",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "@forgekit/cli",
+  "version": "0.1.0",
+  "description": "Command line interface for the ForgeKit project generator.",
+  "keywords": [
+    "forgekit",
+    "cli",
+    "scaffolding",
+    "generator",
+    "templates"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Eugine Nyariki",
+    "email": "euginenyariki100@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/euginestark"
+    },
+    {
+      "type": "other",
+      "url": "https://buymesoda.com/W2nsVZsQNQXjfqwZH6FepWewxOI2"
+    }
+  ],
+  "type": "module",
+  "bin": {
+    "forgekit": "./dist/bin.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@forgekit/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}

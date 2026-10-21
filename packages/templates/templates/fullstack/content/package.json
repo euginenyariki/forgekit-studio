@@ -1,0 +1,19 @@
+{
+  "name": "{{packageName}}",
+  "private": true,
+  "version": "0.1.0",
+  "description": "{{description}}",
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c magenta,cyan \"cd apps/api && {{packageManager}} run dev\" \"cd apps/web && {{packageManager}} run dev\"",
+    "build": "cd apps/api && {{packageManager}} run build && cd ../web && {{packageManager}} run build",
+    "typecheck": "cd apps/api && {{packageManager}} run typecheck && cd ../web && {{packageManager}} run typecheck",
+    "start": "cd apps/api && {{packageManager}} run start"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

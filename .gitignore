@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Test / tooling output
+coverage/
+test-results/
+.playwright/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local environment files (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Deploy / platform
+.vercel/
+.netlify/
+
+# Temporary generation workspaces
+tmp/
+.forgekit-jobs/

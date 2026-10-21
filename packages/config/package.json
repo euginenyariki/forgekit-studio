@@ -1,0 +1,26 @@
+{
+  "name": "@forgekit/config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared TypeScript, ESLint and Prettier configuration for ForgeKit workspaces.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/base.mjs",
+    "./prettier": "./prettier/base.json",
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/node": "./tsconfig/node.json",
+    "./tsconfig/react": "./tsconfig/react.json"
+  },
+  "files": [
+    "eslint",
+    "prettier",
+    "tsconfig",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "globals": "^17.13.0",
+    "typescript-eslint": "^8.71.2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@forgekit/config/tsconfig/node",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["tests/**/*.ts", "vitest.config.ts"]
+}

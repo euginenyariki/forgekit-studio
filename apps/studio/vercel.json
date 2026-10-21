@@ -1,0 +1,5 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "pnpm -C ../.. --filter @forgekit/templates --filter @forgekit/core build && next build"
+}

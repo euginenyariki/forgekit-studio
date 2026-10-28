@@ -344,3 +344,74 @@ textarea:focus {
 .back {
   font-size: 0.88rem;
 }
+
+.cli-section {
+  margin-top: 40px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+
+.cli-header h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.cli-header p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.cli-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.cli-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-card);
+  color: var(--text);
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cli-item:hover {
+  border-color: var(--accent);
+}
+
+.cli-label {
+  font-size: 0.74rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.cli-cmd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  color: var(--accent-text);
+  overflow-wrap: anywhere;
+}
+
+.cli-copy {
+  align-self: flex-end;
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: var(--text-muted);
+}
+
+.cli-item:hover .cli-copy {
+  color: var(--accent);
+}

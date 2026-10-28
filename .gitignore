@@ -37,3 +37,5 @@ Thumbs.db
 # Temporary generation workspaces
 tmp/
 .forgekit-jobs/
+.vercel
+.env*

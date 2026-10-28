@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { getCatalog } from '@/lib/catalog';
 import { formatBytes } from '@/lib/format';
 
+import { CliCopyBox } from './cli-copy-box';
+
 export default async function HomePage() {
   const templates = await getCatalog();
 
@@ -16,6 +18,8 @@ export default async function HomePage() {
           required.
         </p>
       </section>
+
+      <CliCopyBox />
 
       <section className="grid" aria-label="Templates">
         {templates.map((template) => (
